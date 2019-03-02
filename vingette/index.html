@@ -10,6 +10,29 @@
     <!-- There are several ways to create a vingette effect using css, this example will be using the box-shadow and radial-gradient properties -->
 
     <!--****** Box-Shadow Example***** -->
+    <div class="ex boxShadow"><h3>Box Shadow Example</h3></div>
+    <br /><br /><br />
+
     <!--****** Radial-Gradient Example***** -->
+    <div class="ex radialGrad">
+      <h3>Radial gradient example</h3>
+    </div>
   </body>
+
+  <style>
+    .ex {
+      border: 2px solid pink;
+      display: inline-block;
+      padding: 20px;
+    }
+    /* box-shadow, you must use the inset value to have the shadow inside the box */
+    /* the first property value sets the horizontal offset. Second value sets the vertical offset. Third vale sets the blur offset.  */
+
+    /* If a color is not specified the default color will be inherited from the text */
+    .boxShadow {
+      box-shadow: 5px 15px 15px inset;
+    }
+
+    /* radial-gradient property */
+  </style>
 </html>
