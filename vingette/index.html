@@ -10,18 +10,34 @@
     <!-- There are several ways to create a vingette effect using css, this example will be using the box-shadow and radial-gradient properties -->
 
     <!--****** Box-Shadow Example***** -->
-    <div class="ex boxShadow">
-      <h3>Box Shadow Example</h3>
-      <p>
-        Use the box-shadow property, value: <br />
-        25px 0px 50px inset
-      </p>
+    <p>
+      The box shadow property adds a shadow from a horizontal and or vertical
+      direction.
+    </p>
+    <div class="ex boxShadow1">
+      <h3>Box Shadow Example 1</h3>
     </div>
-    <br /><br /><br />
+    <br /><br />
+    <div class="ex boxShadow2">
+      <h3>Box Shadow Example 2</h3>
+    </div>
+
+    <br /><br />
 
     <!--****** Radial-Gradient Example***** -->
-    <div class="ex radialGrad">
-      <h3>Radial gradient example</h3>
+    <p>
+      Radial gradient gives an evenly space shadow all around. Use the
+      background-image property, and set the value to radial-gradient.
+    </p>
+    <div class="ex radialGrad1">
+      <h3>Radial gradient example 1</h3>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="ex radialGrad2">
+      <h3>Radial gradient example 2</h3>
     </div>
   </body>
 
@@ -36,10 +52,23 @@
     /* the first property value sets the horizontal offset. Second value sets the vertical offset. Third vale sets the blur offset.  */
 
     /* If a color is not specified the default color will be inherited from the text */
-    .boxShadow {
+    .boxShadow1 {
       box-shadow: 25px 0px 50px inset;
     }
 
+    .boxShadow2 {
+      box-shadow: 0px 25px 50px inset;
+    }
+
     /* radial-gradient property */
+
+    /* A minimum of 2 colors must be selected for the radial gradient to work */
+    .radialGrad1 {
+      background-image: radial-gradient(black, white);
+    }
+
+    .radialGrad2 {
+      background-image: radial-gradient(teal, pink, black);
+    }
   </style>
 </html>
