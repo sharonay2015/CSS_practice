@@ -1,7 +1,7 @@
 ## How to make a vignette
 
 Box Shadow Examples
-![](vignette.gif)
+![](vignette1.JPG)
 
 Radial Gradient Examples
-![](vignette2.gif)
+![](vignette2.JPG)
