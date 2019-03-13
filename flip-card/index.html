@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Flip Card</title>
 </head>
+
 <body>
   <!-- container to hold cards -->
   <div class="flip-cards">
     <!-- CARD 1 -->
-    <div class="card" >
-      <div class="card-front" id="c1-front"><h1>Hello</h1></div>
+    <div class="card c1">
+      <div class="card-front" id="c1-front">
+        <h1>Hello</h1>
+      </div>
       <div class="card-back" id="c1-back">
         <h1>GoodBye</h1>
       </div>
     </div>
     <!-- CARD 2 -->
-    <div class="card">
+    <div class="card c2">
       <!-- FRONT OF CARD -->
-      <div class="card-front" id="c2-front"><h1>Hello</h1></div>
+      <div class="card-front" id="c2-front">
+        <h1>Hello</h1>
+      </div>
       <!-- BACK OF CARD -->
       <div class="card-back" id="c2-back">
         <h1>GoodBye</h1>
@@ -39,9 +45,17 @@
 
   .card {
     position: relative;
-    height: 250px;
-    width: 300px;
+    height: 150px;
+    width: 200px;
     margin: 12px auto;
   }
+
+  .card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
 </style>
+
 </html>
