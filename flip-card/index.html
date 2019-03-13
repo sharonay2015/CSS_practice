@@ -9,24 +9,27 @@
 </head>
 
 <body>
+  <h1>Flip Cards</h1>
+  <p>CSS properties of transition, transform, and backface-visibility are used to create the flip effect. </p>
   <!-- container to hold cards -->
   <div class="flip-cards">
     <!-- CARD 1 -->
     <div class="card c1">
       <div class="card-front" id="c1-front">
         <h1>Hello</h1>
+        <p>transform is set to rotateX</p>
       </div>
       <div class="card-back" id="c1-back">
         <h1>GoodBye</h1>
+        <p></p>
       </div>
     </div>
     <!-- CARD 2 -->
     <div class="card c2">
-      <!-- FRONT OF CARD -->
       <div class="card-front" id="c2-front">
         <h1>Hello</h1>
+        <p>transform is set to rotateY</p>
       </div>
-      <!-- BACK OF CARD -->
       <div class="card-back" id="c2-back">
         <h1>GoodBye</h1>
       </div>
@@ -35,6 +38,10 @@
 </body>
 
 <style>
+  h1 {
+    text-align: center;
+  }
+
   .flip-cards {
     border: 2px solid black;
     margin: 10px auto;
@@ -50,7 +57,7 @@
     width: 200px;
     margin: 12px auto;
     transform-style: preserve-3d;
-    transition: all 1.5s ease;
+    transition: all 3s ease;
   }
 
   .card:hover {
@@ -70,6 +77,21 @@
     height: 100%;
     backface-visibility: hidden;
     transform: rotateY(180deg);
+  }
+
+  #c1-front {
+    color: white;
+    background: red;
+  }
+
+  .c1:hover {
+    transform: rotateX(180deg);
+  }
+
+  #c1-back {
+    color: white;
+    background: red;
+    transform: rotateX(180deg);
   }
 </style>
 
