@@ -27,6 +27,11 @@
   .menu ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
+  }
+
+  .menu li {
+    flex: 1 0 auto;
+    text-align: center;
   }
 }
