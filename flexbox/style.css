@@ -1,3 +1,10 @@
 .menu-container {
   padding-bottom: 2em;
 }
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: rgb(202, 123, 134);
+}
