@@ -1,5 +1,7 @@
 .menu-container {
   padding-bottom: 2em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid hsl(0, 0%, );
 }
 
 .menu ul {
@@ -7,4 +9,24 @@
   padding: 0;
   margin: 0;
   background: rgb(202, 123, 134);
+}
+
+.menu li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: .6em 1em;
+}
+
+.menu li a:hover {
+  background: hsl(0, 0%, 85%);
+  color: rgb(202, 123, 134);
+}
+
+@media screen and (min-width: 30em) {
+  .menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
