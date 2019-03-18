@@ -9,6 +9,7 @@
   padding: 0;
   margin: 0;
   background: rgb(202, 123, 134);
+  /* width: 25%; */
 }
 
 .menu li a {
@@ -23,11 +24,13 @@
   color: rgb(202, 123, 134);
 }
 
+/* Menu will display on a single line on larger screens */
 @media screen and (min-width: 30em) {
   .menu ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    /* width: 100%; */
   }
 
   .menu li {
