@@ -9,14 +9,29 @@
   padding: 0;
   margin: 0;
   background: rgb(202, 123, 134);
-  /* width: 25%; */
 }
 
 .menu li a {
-  display: block;
-  text-decoration: none;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
   color: white;
   padding: .6em 1em;
+}
+
+.icon {
+  flex: 0 0 1.5em;
+  font-size: 1.8em;
+}
+.button-text {
+  font-size: 1.8em;
+}
+
+.button-text span {
+  display: block;
+  font-size: 40%;
+  font-weight: lighter;
+  font-style: italic;
 }
 
 .menu li a:hover {
@@ -26,5 +41,14 @@
 
 /* Menu will display on a single line on larger screens */
 @media screen and (min-width: 30em) {
-  
+  .menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu li {
+    display: flex;
+    flex: 1 0 12em;
+  }
 }
