@@ -6,14 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Multi Level Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
   <div class="main-container">
     <h2>Multi-Level(Drop-Down) Menu with Social Media Menu</h2>
     <!-- drop down menu -->
-    <section class="drop-down-menu">
-      <nav class="multi-level menu" id="multi-menu">
+    <section class="menu-container">
+      <nav class="multi-level menu" id="multi-level">
         <ul>
           <li><a href="#">Home</a></li>
           <li class="menu-child">
@@ -35,6 +39,18 @@
               <li><a href="#">Europe</a></li>
             </ul>
           </li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- soical media menu -->
+    <section class="menu-container">
+      <nav class="social-menu menu" id="social-menu">
+        <ul>
+          <li><a href="http://facebook.com"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="http://twitter.com"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="http://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="http://instagram.com"><i class="fab fa-instagram"></i></a></li>
         </ul>
       </nav>
     </section>
