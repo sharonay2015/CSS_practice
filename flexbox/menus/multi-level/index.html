@@ -13,10 +13,11 @@
 </head>
 
 <body>
-  <div class="main-container">
-    <h2>Multi-Level(Drop-Down) Menu with Social Media Menu</h2>
+  <h2>Multi-Level(Drop-Down) Menu with Social Media Menu</h2>
+
+  <section class="menu-container">
     <!-- drop down menu -->
-    <section class="menu-container">
+    <div class="mixed-menu">
       <nav class="multi-level menu" id="multi-level">
         <ul>
           <li><a href="#">Home</a></li>
@@ -42,10 +43,7 @@
           <li><a href="#">Sleep</a></li>
         </ul>
       </nav>
-    </section>
-
-    <!-- soical media menu -->
-    <section class="menu-container">
+      <!-- soical media menu -->
       <nav class="social-menu menu" id="social-menu">
         <ul>
           <li><a href="http://facebook.com"><i class="fab fa-facebook"></i></a></li>
@@ -54,8 +52,11 @@
           <li><a href="http://instagram.com"><i class="fab fa-instagram"></i></a></li>
         </ul>
       </nav>
-    </section>
+  </section>
   </div>
+
+  <script type="text/javascript" src="JS/libs/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="JS/menu-toggle.js"></script>
 </body>
 
 </html>
