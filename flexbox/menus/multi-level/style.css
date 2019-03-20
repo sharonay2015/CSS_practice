@@ -9,6 +9,7 @@
   padding: 0;
   margin: 0;
   background: rgb(202, 123, 134);
+  /* display: flex; */
 }
 
 .menu li a {
@@ -46,10 +47,9 @@
 /* #social-menu ul {
   background: grey;
 }
-#multi-level ul {
+.mixed-menu #multi-level ul {
   background: teal;
 } */
-
 
 /* Styles for Single Level Menu */
 @media screen and (max-width: 30em){
@@ -62,7 +62,7 @@
 	}
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 20em) {
   .multi-level ul {
     display: flex;
     flex-wrap: wrap;
