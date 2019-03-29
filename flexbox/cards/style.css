@@ -1,0 +1,5 @@
+/*
+The primary stylesheet for the cards. This sheet pulls in all the components in order of appearance.
+*/
+
+@import url('css/reset.css');
