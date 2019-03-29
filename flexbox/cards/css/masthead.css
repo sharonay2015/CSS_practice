@@ -1,0 +1,12 @@
+.masthead {
+  background: pink;
+}
+
+.title {
+  margin: 0 0 1em;
+  padding: 1em 0;
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center;
+  color: gray;
+}
