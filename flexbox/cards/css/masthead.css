@@ -1,5 +1,5 @@
 .masthead {
-  background: pink;
+  background-image: linear-gradient(-200deg, blue, purple, pink);
 }
 
 .title {
@@ -9,4 +9,16 @@
   font-weight: 300;
   text-align: center;
   color: gray;
+}
+
+@media screen and (min-width: 44.44em) {
+  .title {
+      font-size: 2em;
+  }
+}
+  
+@media screen and (min-width: 50em) {
+  .title {
+      font-size: 2.5em;
+  }
 }

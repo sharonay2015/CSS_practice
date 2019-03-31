@@ -1,8 +1,7 @@
 /*
 The primary stylesheet for the cards. This sheet pulls in all the components in order of appearance.
 */
-
-@import url('css/reset.css');
 @import url('css/masthead.css');
-@import url('css/layout');
+@import url('css/layout.css');
 @import url('css/card.css');
+@import url('css/reset.css');
