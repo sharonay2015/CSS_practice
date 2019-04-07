@@ -45,3 +45,26 @@
 	background: hsl(342, 94%, 87%);
 }
 
+/* FLEXBOX STYLING */
+@media screen and (min-width: 40em) {
+  .outerWrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    display: flex;
+  }
+
+  .mainArea {
+    flex: 1 1 auto;
+  }
+  .sidebar {
+    flex: 0 0 12em;
+  }
+
+  .mainContent {
+    max-width: 40em;
+    margin: 0 auto;
+  }
+}
