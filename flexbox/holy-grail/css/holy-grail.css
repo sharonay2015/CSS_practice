@@ -9,7 +9,7 @@
 	background: hsl(0, 0%, 20%);
 }
 
-.content {
+.mainContent {
 	padding: 0 1.4em 1.4em;
 }
 
@@ -58,13 +58,16 @@
 
   .mainArea {
     flex: 1 1 auto;
+    order: 1;
   }
-  .sidebar {
-    flex: 0 0 12em;
-  }
-
+  
   .mainContent {
     max-width: 40em;
     margin: 0 auto;
+  }
+  
+  .sidebar {
+    flex: 0 0 12em;
+    order: 0;
   }
 }
