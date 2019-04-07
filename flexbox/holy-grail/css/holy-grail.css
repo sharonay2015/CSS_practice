@@ -45,6 +45,33 @@
 	background: hsl(342, 94%, 87%);
 }
 
+/* SIDEBAR SWITCHES */
+@media screen and (max-width: 40em) {
+	.sidebarSwitch {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 40em) {
+	.sidebarSwitch {
+		position: absolute;
+		right: 0;
+		padding: .4em 1em;
+		color: hsl(0, 0%, 95%);
+	}
+
+	.sidebarSwitch a{
+		color: hsl(0, 0%, 100%);
+		padding-left: .4em;
+	}
+
+	.sidebarSwitch a:hover, .sidebarSwitch a:focus {
+		color: hsl(342, 79%, 72%);
+	}
+	
+}
+
+
 /* FLEXBOX STYLING */
 @media screen and (min-width: 40em) {
   .outerWrap {
