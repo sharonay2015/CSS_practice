@@ -1,0 +1,47 @@
+/* Base styles */
+.title {
+	margin-bottom: 0;
+}
+
+.mainMenu {
+	padding: .4em 1em;
+	color: white;
+	background: hsl(0, 0%, 20%);
+}
+
+.content {
+	padding: 0 1.4em 1.4em;
+}
+
+.sidebar {
+	padding: .5em 1.4em 1em;
+	background: hsl(0, 0%, 90%);
+}
+
+.menuExample ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menuExample a {
+	display: block;
+	padding: .4em 0;
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.menuExample a:hover,
+.menuExample a:focus {
+	padding: .4em 1em;
+	background: hsl(0, 0%, 20%);
+	color: white;
+}
+
+.footer {
+	padding: .4em 1em;
+	text-align: center;
+	background: hsl(342, 94%, 87%);
+}
+
