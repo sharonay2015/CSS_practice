@@ -16,6 +16,7 @@
 .sidebar {
 	padding: .5em 1.4em 1em;
 	background: hsl(0, 0%, 90%);
+	overflow: hidden;
 }
 
 .menuExample ul {
@@ -96,7 +97,8 @@
   
   .sidebar {
     flex: 0 0 12em;
-    order: 2;
+		order: 2;
+		transition: padding .5s ease, flex .5s ease, color .2s ease-in .3s;
 	}
 	
 	.sidebarLeft {
@@ -105,5 +107,16 @@
 
 	.noSidebar {
 		flex-direction: column;
+	}
+
+	.hide {
+		flex: 0 0 0;
+		padding: 0;
+		color: hsla(0, 0%, 0%, 0);
+		transition: color .2s ease, flex .4s ease .3s, padding .4s ease .3s;
+	}
+
+	.hide a {
+		color: hsla(0, 0%, 0);
 	}
 }
