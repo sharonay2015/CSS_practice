@@ -113,8 +113,12 @@
 
 	.dropdown-toggle:hover,
 	.dropdown-toggle:focus {
-		background: hsl(0, 0%, 25%);
+    background: hsl(0, 0%, 25%);
 	}
+
+.dropdown-toggle:hover .toggled-on {
+  display: block;
+}
 
 	.dropdown-toggle.toggle-on:after {
 		content: "\f106";
